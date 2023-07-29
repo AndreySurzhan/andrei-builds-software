@@ -1,0 +1,7 @@
+.frameworks {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-around;
+}

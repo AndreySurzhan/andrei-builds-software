@@ -37,12 +37,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        docs:false
       }),
     ],
   ],
@@ -60,8 +58,7 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            href: '/resume',
             position: 'left',
             label: 'Resume',
           },
@@ -80,7 +77,7 @@ const config = {
             items: [
               {
                 label: 'Resume',
-                to: '/docs/intro',
+                to: '/resume',
               },
             ],
           },

@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 export default function FrameworkCard({ name, alt, src }) {
   return (
-    <div className={`${styles.framework} card`}>
+    <div className={`${styles.framework} card shadow--md`}>
       <img src={src} alt={alt} />
       <p className="pills__item pills__item--active margin-bottom--sm">
         {name}

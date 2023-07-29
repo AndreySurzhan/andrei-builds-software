@@ -7,7 +7,7 @@ export default function FrameworkList() {
   return (
     <div className={styles.frameworks}>
       {frameworks.map((framework) => (
-        <FrameworkCard {...framework} />
+        <FrameworkCard key={framework.name} {...framework} />
       ))}
     </div>
   );

@@ -44,7 +44,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -54,7 +53,7 @@ const config = {
         title: 'Andrei Builds Software',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
@@ -106,6 +105,42 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: '/img/apple-touch-icon.png',
+        sizes:"180x180"
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-32x32.png',
+        type: "image/png",
+        sizes: "32x32"
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-16x16.png',
+        type: "image/png",
+        sizes: "16x16"
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/site.webmanifest',
+      },
+    }
+
+  ]
 };
 
 module.exports = config;

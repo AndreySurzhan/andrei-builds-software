@@ -3,5 +3,12 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .frameworks {
+        gap: 1rem;
+        justify-content: space-around;
+    }
 }

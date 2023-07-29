@@ -29,11 +29,15 @@ export default [
     name: "jest",
     alt: "jest icon",
   },
-
   {
     src: "/img/frameworks/playwright.svg",
     name: "playwright",
     alt: "playwright icon",
+  },
+  {
+    src: "/img/frameworks/postman.svg",
+    name: "postman",
+    alt: "postman icon",
   },
   {
     src: "/img/frameworks/nodejs.svg",

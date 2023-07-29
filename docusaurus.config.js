@@ -32,6 +32,8 @@ const config = {
     locales: ['en'],
   },
 
+  deploymentBranch: 'gh-pages',
+
   presets: [
     [
       'classic',
@@ -62,10 +64,16 @@ const config = {
             label: 'Resume',
           },
           {
+            href: 'https://www.linkedin.com/in/andreisurzhan/',
+            label: 'Linkedin',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/AndreySurzhan',
             label: 'GitHub',
             position: 'right',
           },
+          
         ],
       },
       footer: {
@@ -85,20 +93,20 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/users/4043541/andrei-surzhan',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/andrei.surzhan',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/andrei.surzhan/',
               },
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Andrei Builds Software, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

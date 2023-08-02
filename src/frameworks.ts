@@ -69,4 +69,14 @@ export default [
     name: "nestjs",
     alt: "nestjs icon",
   },
+  {
+    src: "/img/frameworks/datadog.svg",
+    name: "datadog",
+    alt: "datadog icon",
+  },
+  {
+    src: "/img/frameworks/figma.svg",
+    name: "figma",
+    alt: "figma icon",
+  },
 ];

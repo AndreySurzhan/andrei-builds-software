@@ -25,6 +25,11 @@ export default [
     alt: "react-query icon",
   },
   {
+    src: "/img/frameworks/aws.svg",
+    name: "aws",
+    alt: "aws icon",
+  },
+  {
     src: "/img/frameworks/jest.svg",
     name: "jest",
     alt: "jest icon",

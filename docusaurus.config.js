@@ -1,49 +1,49 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Andrei Builds Software',
-  tagline: 'Andrei Builds Software',
-  favicon: 'img/favicon.ico',
+  title: "Andrei Builds Software",
+  tagline: "Andrei Builds Software",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://andrei-builds.software',
+  url: "https://andrei-builds.software",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'AndreySurzhan', // Usually your GitHub org/user name.
-  projectName: 'andrei-builds-software', // Usually your repo name.
+  organizationName: "AndreySurzhan", // Usually your GitHub org/user name.
+  projectName: "andrei-builds-software", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: "gh-pages",
   trailingSlash: true,
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
-        docs:false
+        docs: false,
       }),
     ],
   ],
@@ -51,61 +51,60 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/social.png',
+      image: "img/social.png",
       navbar: {
-        title: 'Andrei Builds Software',
+        title: "Andrei Builds Software",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.png',
+          alt: "My Site Logo",
+          src: "img/logo.png",
         },
         items: [
           {
-            href: '/resume',
-            position: 'left',
-            label: 'Resume',
+            href: "/resume",
+            position: "left",
+            label: "Resume",
           },
           {
-            href: 'https://www.linkedin.com/in/andreisurzhan/',
-            label: 'Linkedin',
-            position: 'right',
+            href: "https://www.linkedin.com/in/andreisurzhan/",
+            label: "Linkedin",
+            position: "right",
           },
           {
-            href: 'https://github.com/AndreySurzhan',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/AndreySurzhan",
+            label: "GitHub",
+            position: "right",
           },
-          
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Resume',
+            title: "Resume",
             items: [
               {
-                label: 'Resume',
-                to: '/resume',
+                label: "Resume",
+                to: "/resume",
               },
             ],
           },
           {
-            title: 'Social',
+            title: "Social",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/users/4043541/andrei-surzhan',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/users/4043541/andrei-surzhan",
               },
               {
-                label: 'Facebook',
-                href: 'https://www.facebook.com/andrei.surzhan',
+                label: "Facebook",
+                href: "https://www.facebook.com/andrei.surzhan",
               },
               {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/andrei.surzhan/',
+                label: "Instagram",
+                href: "https://www.instagram.com/andrei.surzhan/",
               },
             ],
-          }
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Andrei Builds Software, Built with Docusaurus.`,
       },
@@ -116,40 +115,57 @@ const config = {
     }),
   headTags: [
     {
-      tagName: 'link',
+      tagName: "link",
       attributes: {
-        rel: 'apple-touch-icon',
-        href: '/img/apple-touch-icon.png',
-        sizes:"180x180"
+        rel: "apple-touch-icon",
+        href: "/img/apple-touch-icon.png",
+        sizes: "180x180",
       },
     },
     {
-      tagName: 'link',
+      tagName: "link",
       attributes: {
-        rel: 'icon',
-        href: '/img/favicon-32x32.png',
+        rel: "icon",
+        href: "/img/favicon-32x32.png",
         type: "image/png",
-        sizes: "32x32"
+        sizes: "32x32",
       },
     },
     {
-      tagName: 'link',
+      tagName: "link",
       attributes: {
-        rel: 'icon',
-        href: '/img/favicon-16x16.png',
+        rel: "icon",
+        href: "/img/favicon-16x16.png",
         type: "image/png",
-        sizes: "16x16"
+        sizes: "16x16",
       },
     },
     {
-      tagName: 'link',
+      tagName: "link",
       attributes: {
-        rel: 'manifest',
-        href: '/site.webmanifest',
+        rel: "manifest",
+        href: "/site.webmanifest",
       },
-    }
-
-  ]
+    },
+    // Google analytics
+    {
+      tagName: "script",
+      attributes: {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-QHZ2SMY077",
+        async: "true",
+      },
+    },
+    {
+      tagName: "script",
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-QHZ2SMY077');`,
+      attributes: {},
+    },
+  ],
 };
 
 module.exports = config;

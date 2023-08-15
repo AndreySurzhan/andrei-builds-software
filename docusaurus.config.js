@@ -151,18 +151,18 @@ const config = {
     {
       tagName: "script",
       attributes: {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-QHZ2SMY077",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-5J3FEPDNRR",
         async: "true",
       },
     },
     {
       tagName: "script",
       innerHTML: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-QHZ2SMY077');`,
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-5J3FEPDNRR');`,
       attributes: {},
     },
   ],

@@ -46,6 +46,13 @@ const config = {
         docs: false,
       }),
     ],
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: "G-999X9XX9XX",
+        anonymizeIP: true,
+      },
+    ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -154,16 +161,6 @@ const config = {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5J3FEPDNRR",
         async: "true",
       },
-    },
-    {
-      tagName: "script",
-      innerHTML: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-5J3FEPDNRR');`,
-      attributes: {},
     },
   ],
 };

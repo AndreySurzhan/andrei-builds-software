@@ -44,14 +44,11 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         docs: false,
+        googleAnalytics: {
+          trackingID: "G-5J3FEPDNRR",
+          anonymizeIP: true,
+        },
       }),
-    ],
-    [
-      "@docusaurus/plugin-google-gtag",
-      {
-        trackingID: "G-5J3FEPDNRR",
-        anonymizeIP: true,
-      },
     ],
   ],
   themeConfig:
@@ -161,6 +158,16 @@ const config = {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5J3FEPDNRR",
         async: "true",
       },
+    },
+    {
+      tagName: "script",
+      innerHTML: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-5J3FEPDNRR');`,
+      attributes: {},
     },
   ],
 };
